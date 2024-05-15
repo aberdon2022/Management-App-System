@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Private</title>
+</head>
+<body>
+    <h1>Welcome to the private page, {{user.username}}</h1>
+    <p>Employees List</p>
+    {{#isAdmin}}
+    <a href="/add">Add Employee</a>
+    {{/isAdmin}}
+    <a href="/list">List Employees</a>
+    <a href="/update">Update Employee</a>
+    <a href="/logout">Logout</a>
+</body>
+</html>

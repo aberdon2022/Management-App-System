@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Users</title>
+</head>
+<body>
+    <h1>Employees List</h1>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>PhoneNumber</th>
+        </tr>
+        {{#users}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{email}}</td>
+            <td>{{phoneNumber}}</td>
+        </tr>
+        {{/users}}
+    </table>
+<a href="/private">Back</a>
+</body>
+</html>
